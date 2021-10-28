@@ -13,6 +13,11 @@ int main() {
     if(c=='-'){
 		printf("%d\n",a-b);
 	}
+
+    if (c == '/') {
+        if(b == 0) print("Error!!!\n");
+        print("%lf\n", (double)a / (double)b);
+    }
 	
 	return 0;
 }
