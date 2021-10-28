@@ -25,5 +25,13 @@ int main() {
 		printf("%d\n",a*b);
 	}
 
+    if(c=='^'){
+		int ans=1;
+		for(int i=0;i<b;i++){
+			ans*=a;
+		}
+		printf("%d\n",ans);
+	}
+
 	return 0;
 }
