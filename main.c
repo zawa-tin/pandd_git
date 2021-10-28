@@ -28,6 +28,7 @@ int main() {
 
 
     if (c == 'p') {
+        int ans=1,i;
         if (a < b) {
             printf("error!\n");
             exit(1);
