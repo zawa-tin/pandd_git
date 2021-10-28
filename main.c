@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int a, b;
@@ -16,14 +17,28 @@ int main() {
 
 
     if (c == '/') {
-        if(b == 0) print("Error!!!\n");
-        print("%lf\n", (double)a / (double)b);
+        if(b == 0) printf("Error!!!\n");
+        printf("%lf\n", (double)a / (double)b);
     }
 	
 
     if(c=='*'){
 		printf("%d\n",a*b);
 	}
+
+
+    if (c == 'p') {
+        int ans=1,i;
+        if (a < b) {
+            printf("error!\n");
+            exit(1);
+        }
+
+        for (i = a ; i > a - b ; i--)
+            ans *= i;
+
+        printf("%d\n", ans);
+    }
 
     if(c=='^'){
 		int ans=1;
@@ -32,6 +47,7 @@ int main() {
 		}
 		printf("%d\n",ans);
 	}
+
 
 	return 0;
 }
