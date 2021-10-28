@@ -14,10 +14,16 @@ int main() {
 		printf("%d\n",a-b);
 	}
 
+
     if (c == '/') {
         if(b == 0) print("Error!!!\n");
         print("%lf\n", (double)a / (double)b);
     }
 	
+
+    if(c=='*'){
+		printf("%d\n",a*b);
+	}
+
 	return 0;
 }
